@@ -1,6 +1,14 @@
+.body-texture {
+  order: -4;
+  display: flex;
+}
 .topnav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
   background-color: #200e3a;
   overflow: hidden;
+  width: 100lh;
 }
 
 /* Style the links inside the navigation bar */
@@ -146,6 +154,57 @@ body {
 }
 /* TODO: Fix the responsive scaling that grid is having trouble with  */
 @media (max-width: 753px) {
+  .header-container {
+    color: azure;
+    display: grid;
+    gap: 0rem;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 0.2fr;
+    height: auto;
+    width: auto;
+  }
+  .main-header {
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-bottom: 300px;
+    margin-left: 100px;
+  }
+  .secondary-header {
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-left: 100px;
+  }
+
+  .black-wooden-texture-image {
+    display: grid;
+    grid-row: span 2;
+    grid-column: span 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: auto;
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    order: -2;
+  }
+  .black-circle {
+    display: grid;
+    grid-column-start: 1;
+    height: 500px;
+    width: auto;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    order: -1;
+  }
   .intro {
     width: 90%;
     display: block;
