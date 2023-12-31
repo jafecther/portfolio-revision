@@ -1,9 +1,11 @@
 .topnav {
+  position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   background-color: #200e3a;
   overflow: hidden;
+  margin-top: 0;
   width: 100vw;
 }
 
@@ -30,13 +32,15 @@
 }
 body {
   background-color: #3887be;
+  margin: 0;
 }
 .header-container {
   color: azure;
   display: grid;
   gap: 0.2rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 0fr;
+  margin: 0;
 }
 .main-header {
   grid-column: span 2;
@@ -45,6 +49,8 @@ body {
   align-items: center;
   grid-column-start: 3;
   grid-row-start: 2;
+  margin-top: 100px;
+  margin-bottom: 0;
 }
 .secondary-header {
   grid-column: span 2;
@@ -54,6 +60,8 @@ body {
   font-family: "Poppins", sans-serif;
   grid-column-start: 3;
   grid-row-start: 3;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .black-wooden-texture-image {
@@ -63,6 +71,7 @@ body {
   width: 501px;
   grid-row-start: 1;
   grid-row-end: 7;
+  margin-bottom: 0;
 }
 .black-circle {
   display: grid;
@@ -72,6 +81,8 @@ body {
   grid-row-start: 1;
   grid-row-end: 6;
   order: -1;
+  margin-top: 100px;
+  margin-bottom: 0;
 }
 .portfolio-content {
   background-color: #38419d;
@@ -85,7 +96,7 @@ body {
   margin: 0;
 }
 
-.HTMLProjects {
+.html-projects {
   display: grid;
   grid-column-start: 3;
   grid-row-start: 1;
@@ -93,12 +104,12 @@ body {
   align-items: center;
   text-align: center;
 }
-.HTMLProjects > h3 > a {
+.html-projects > h3 > a {
   text-decoration: none;
   color: azure;
   font-family: "Poppins", sans-serif;
 }
-.JSGames {
+.js-games {
   display: grid;
   grid-column-start: 3;
   grid-row-start: 2;
@@ -106,7 +117,7 @@ body {
   align-items: center;
   text-align: center;
 }
-.JSGames > h3 > a {
+.js-games > h3 > a {
   text-decoration: none;
   color: azure;
   font-family: "Poppins", sans-serif;
@@ -124,9 +135,10 @@ body {
     display: grid;
     gap: 0.2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0fr;
     height: auto;
     width: auto;
+    margin: 0;
   }
   .main-header {
     grid-column: span 2;
@@ -135,6 +147,8 @@ body {
     align-items: center;
     grid-column-start: 3;
     grid-row-start: 2;
+    margin-top: 105px;
+    margin-bottom: 0;
   }
   .secondary-header {
     grid-column: span 2;
@@ -144,6 +158,8 @@ body {
     font-family: "Poppins", sans-serif;
     grid-column-start: 3;
     grid-row-start: 3;
+    margin-top: 40px;
+    margin-bottom: 0;
   }
 
   .black-wooden-texture-image {
@@ -154,6 +170,7 @@ body {
     grid-row-start: 1;
     grid-row-end: 7;
     order: -2;
+    margin: 0;
   }
   .black-circle {
     display: grid;
