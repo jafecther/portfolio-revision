@@ -1,14 +1,10 @@
-.body-texture {
-  order: -4;
-  display: flex;
-}
 .topnav {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   background-color: #200e3a;
   overflow: hidden;
-  width: 100lh;
+  width: 100vw;
 }
 
 /* Style the links inside the navigation bar */
@@ -39,7 +35,7 @@ body {
   color: azure;
   display: grid;
   gap: 0.2rem;
-  grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 .main-header {
@@ -77,32 +73,35 @@ body {
   grid-row-end: 6;
   order: -1;
 }
-.intro {
-  background-color: #176b87;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10px;
+.portfolio-contents {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: whitesmoke;
-}
-
-.HTMLProjects {
+  gap: 0.2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   background-color: #38419d;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10px;
+  margin: 0;
+}
+.HTMLProjects {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .JSGames {
-  background-color: #38419d;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+#pig-game-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
 }
 
 @media (max-width: 981px) {
@@ -153,7 +152,7 @@ body {
   }
 }
 /* TODO: Fix the responsive scaling that grid is having trouble with  */
-@media (max-width: 753px) {
+/* @media (max-width: 753px) {
   .header-container {
     color: azure;
     display: grid;
@@ -244,4 +243,4 @@ body {
     margin-top: 10px;
     text-align: center;
   }
-}
+} */
