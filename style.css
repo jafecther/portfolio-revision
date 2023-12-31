@@ -73,7 +73,8 @@ body {
   grid-row-end: 6;
   order: -1;
 }
-.portfolio-contents {
+.portfolio-content {
+  background-color: #38419d;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -81,11 +82,12 @@ body {
   gap: 0.2rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  background-color: #38419d;
   margin: 0;
 }
 .HTMLProjects {
   display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -93,6 +95,8 @@ body {
 
 .JSGames {
   display: grid;
+  grid-column-start: 3;
+  grid-row-start: 2;
   justify-content: center;
   align-items: center;
   text-align: center;
