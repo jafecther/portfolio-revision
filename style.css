@@ -84,6 +84,7 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   margin: 0;
 }
+
 .HTMLProjects {
   display: grid;
   grid-column-start: 3;
@@ -92,7 +93,11 @@ body {
   align-items: center;
   text-align: center;
 }
-
+.HTMLProjects > h3 > a {
+  text-decoration: none;
+  color: azure;
+  font-family: "Poppins", sans-serif;
+}
 .JSGames {
   display: grid;
   grid-column-start: 3;
@@ -100,6 +105,11 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.JSGames > h3 > a {
+  text-decoration: none;
+  color: azure;
+  font-family: "Poppins", sans-serif;
 }
 #pig-game-image {
   display: flex;
